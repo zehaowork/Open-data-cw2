@@ -8,6 +8,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Donate from './pages/Donate/Donate';
+import Search from './pages/Search/Search'
 
 import logoIcon from './images/logo-white.png'
 import { Layout,Menu } from 'antd';
@@ -22,12 +23,13 @@ function App() {
   <Layout style={{height:"100vh"}}>
   <Header>
       <img className='logo' alt='Charitable' src={logoIcon} />
-  <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
+  <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
 
         <Menu.Item key="1"> <Link to="/">Home</Link></Menu.Item>
         <Menu.Item key="2"><Link to="/about">About</Link></Menu.Item>
         <Menu.Item key="3"><Link to="/contact">Contact</Link></Menu.Item>
         <Menu.Item key="4"><Link to="/donate">Donate</Link></Menu.Item>
+        <Menu.Item key="5"><Link to="/search">Search</Link></Menu.Item>
       </Menu>
   </Header>
   <Content style ={{width:'100%',background:'white'}}>
@@ -36,6 +38,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/contact"  component={Contact} />
           <Route path="/donate" component={Donate} />
+          <Route path="/search" component={Search} />
         </Switch>
   </Content>
   <Footer style={{ textAlign: 'center' }}>Charitable ©2021 Created by Group 9</Footer>
