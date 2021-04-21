@@ -1,0 +1,11 @@
+.flex-gap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5% 0;
+}
+
+.large-button {
+  height: 200px;
+  width: 300px;
+}
