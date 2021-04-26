@@ -1,11 +1,80 @@
-.flex-gap {
+.home-content {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 5% 0;
+  flex-direction: column;
+  overflow-y: scroll;
 }
 
-.large-button {
-  height: 200px;
-  width: 300px;
+.section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.side {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.middle {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.rank-list {
+  overflow-y: scroll;
+}
+.rank-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rank-badge-container {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rank-name-container {
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rank-quantity-container {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rank-badge {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1990ff;
+  color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.rank-name {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.description {
+  flex: 1;
+  padding: 10px;
+}
+.pie-chart {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
