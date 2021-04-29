@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import { Button, Space,Typography,Divider,List } from 'antd';
 import { Pie } from '@ant-design/charts';
 import './Home.css';
@@ -55,49 +55,24 @@ export default function Home(){
     },
     interactions: [{ type: 'element-active' }],
   };
+  
+const [rankList, setRankList] = useState([]);
+  useEffect(() => {
+   testApi();
+  }, [])
+
 
     const testApi = ()=>{
         axios.get('https://us-central1-open-data-cw2.cloudfunctions.net/getRankedNeedsDataNew').then(result=>{
             console.log(result.data)
+            setRankList(result.data);
         })
     };
 
     return (<div className="home-content">
      <div className="section">
      <div className="side">
-        <Title level={2} >Top Item Needed</Title>
-        <div className='rank-list' >
-        <List bordered dataSource={data}
-        header={
-            <div className='rank-item'>
-           <div className='rank-badge-container'>
-           <div >🔥 Rank</div>
-           </div>
-           <div className='rank-name-container'>
-           <div >🍔 Item Name</div>
-           </div>
-          <div className='rank-quantity-container'>
-          <div>1️⃣ Quantity</div>
-          </div>
-       </div>
-        }
-        renderItem={(item,index) => (
-      <List.Item  >
-       <div className='rank-item'>
-           <div className='rank-badge-container'>
-           <div className='rank-badge' >{index+1}</div>
-           </div>
-           <div className='rank-name-container'>
-           <div className='rank-name' >Pudding</div>
-           </div>
-          <div className='rank-quantity-container'>
-          <div>1</div>
-          </div>
-       </div>
-      </List.Item>
-    )} />
-        </div>
-
+       
        
      </div>
      <Divider style={{height:'100%'}} type='vertical' />
@@ -112,7 +87,41 @@ export default function Home(){
       </div>
       </div>
       <Divider style={{height:'100%'}} type='vertical' />
-      <div className="side" ></div>
+      <div className="side" >
+      <Title level={2} >Top Item Needed</Title>
+        <div className='rank-list' >
+        <List bordered dataSource={rankList}
+        header={
+            <div className='rank-item'>
+           <div className='rank-badge-container'>
+           <div >🔥 Rank</div>
+           </div>
+           <div className='rank-name-container'>
+           <div >🍔 Item Name</div>
+           </div>
+          {/* <div className='rank-quantity-container'>
+          <div>1️⃣ Quantity</div>
+          </div> */}
+       </div>
+        }
+        renderItem={(item,index) => (
+      <List.Item  >
+       <div className='rank-item'>
+           <div className='rank-badge-container'>
+           <div className='rank-badge' >{index+1}</div>
+           </div>
+           <div className='rank-name-container'>
+           <div className='rank-name' >{item.name}</div>
+           </div>
+          {/* <div className='rank-quantity-container'>
+          <div>{item.quantity}</div>
+          </div> */}
+       </div>
+      </List.Item>
+    )} />
+        </div>
+
+      </div>
      </div>
      <Divider style={{width:'100%'}} type='horizontal' />
      <div className='section' >

@@ -1,13 +1,20 @@
 import React from 'react';
-import { Button } from 'antd';
-
+import { Typography,Divider } from 'antd';
+import './Donate.css'
+import Banner from '../../images/banner.jpeg'
+import DonateIcon from '../../images/donate.png'
 export default function Donate(){
-    return (<div>
-        <div className="image-placeholder"> Image</div>
-        <p>Please donate to help us keep running CharitAble! Every contribution is valuable to us! Thanks in advance!</p>
-        <div className="donate-padding">
-        <Button type="primary">Donate</Button>
-
+    const {Title} =Typography;
+    return (<div className='donate-content' >
+        <div className="banner-section" >
+        <img alt="banner" className='banner' src={Banner} />
+        <div className="banner-text" >Support Us</div>
         </div>
+        <Divider/>
+        <Title level={2}>Donations</Title>
+    <div className="info-text"><Typography.Text>
+    Please donate to help us keep running CharitAble! Every contribution is valuable to us! Thanks in advance!
+    </Typography.Text></div>
+    <img alt='donate' className='donate-btn' src={DonateIcon} />
     </div>)
 }
