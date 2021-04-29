@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/Open-data-cw2/static/css/main.ef5dd715.chunk.css",
-    "main.js": "/Open-data-cw2/static/js/main.ffd7548d.chunk.js",
-    "main.js.map": "/Open-data-cw2/static/js/main.ffd7548d.chunk.js.map",
-    "runtime-main.js": "/Open-data-cw2/static/js/runtime-main.6157541c.js",
-    "runtime-main.js.map": "/Open-data-cw2/static/js/runtime-main.6157541c.js.map",
+    "main.css": "/Open-data-cw2/static/css/main.1a16d880.chunk.css",
+    "main.js": "/Open-data-cw2/static/js/main.c99f8f88.chunk.js",
+    "main.js.map": "/Open-data-cw2/static/js/main.c99f8f88.chunk.js.map",
+    "runtime-main.js": "/Open-data-cw2/static/js/runtime-main.72716147.js",
+    "runtime-main.js.map": "/Open-data-cw2/static/js/runtime-main.72716147.js.map",
     "static/css/2.c51d807b.chunk.css": "/Open-data-cw2/static/css/2.c51d807b.chunk.css",
-    "static/js/2.0825a7a8.chunk.js": "/Open-data-cw2/static/js/2.0825a7a8.chunk.js",
-    "static/js/2.0825a7a8.chunk.js.map": "/Open-data-cw2/static/js/2.0825a7a8.chunk.js.map",
-    "static/js/3.6cb0aa6c.chunk.js": "/Open-data-cw2/static/js/3.6cb0aa6c.chunk.js",
-    "static/js/3.6cb0aa6c.chunk.js.map": "/Open-data-cw2/static/js/3.6cb0aa6c.chunk.js.map",
+    "static/js/2.ca01fee6.chunk.js": "/Open-data-cw2/static/js/2.ca01fee6.chunk.js",
+    "static/js/2.ca01fee6.chunk.js.map": "/Open-data-cw2/static/js/2.ca01fee6.chunk.js.map",
+    "static/js/3.ee7ed08b.chunk.js": "/Open-data-cw2/static/js/3.ee7ed08b.chunk.js",
+    "static/js/3.ee7ed08b.chunk.js.map": "/Open-data-cw2/static/js/3.ee7ed08b.chunk.js.map",
     "index.html": "/Open-data-cw2/index.html",
     "static/css/2.c51d807b.chunk.css.map": "/Open-data-cw2/static/css/2.c51d807b.chunk.css.map",
-    "static/css/main.ef5dd715.chunk.css.map": "/Open-data-cw2/static/css/main.ef5dd715.chunk.css.map",
-    "static/js/2.0825a7a8.chunk.js.LICENSE.txt": "/Open-data-cw2/static/js/2.0825a7a8.chunk.js.LICENSE.txt",
+    "static/css/main.1a16d880.chunk.css.map": "/Open-data-cw2/static/css/main.1a16d880.chunk.css.map",
+    "static/js/2.ca01fee6.chunk.js.LICENSE.txt": "/Open-data-cw2/static/js/2.ca01fee6.chunk.js.LICENSE.txt",
+    "static/media/donate.712ecf2f.png": "/Open-data-cw2/static/media/donate.712ecf2f.png",
     "static/media/logo-white.338cfa7b.png": "/Open-data-cw2/static/media/logo-white.338cfa7b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6157541c.js",
+    "static/js/runtime-main.72716147.js",
     "static/css/2.c51d807b.chunk.css",
-    "static/js/2.0825a7a8.chunk.js",
-    "static/css/main.ef5dd715.chunk.css",
-    "static/js/main.ffd7548d.chunk.js"
+    "static/js/2.ca01fee6.chunk.js",
+    "static/css/main.1a16d880.chunk.css",
+    "static/js/main.c99f8f88.chunk.js"
   ]
 }
