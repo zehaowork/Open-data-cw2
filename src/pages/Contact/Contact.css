@@ -1,0 +1,28 @@
+.contact_text {
+  padding: 3% 10%;
+  font-size: 23px;
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.side_c {
+  /* display: flex; */
+  /* flex-direction: column; */
+  align-items: center;
+  /* padding: 10px; */
+  padding: 0 10%;
+  /* width: 80%; */
+}
+
+.centering {
+  text-align: center;
+}
+
+.form_padding {
+  padding: 0 25%;
+}
