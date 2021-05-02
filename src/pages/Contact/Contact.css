@@ -1,0 +1,25 @@
+.contact-text {
+  padding: 3% 10%;
+  font-size: 23px;
+  text-align: center;
+}
+
+.contact-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.form-content {
+  align-items: center;
+  text-align: center;
+  padding: 0 10%;
+  width: 60%;
+}
+
+.submit-button {
+  padding-left: 25%;
+}
