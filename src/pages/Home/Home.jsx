@@ -1,13 +1,17 @@
 import React,{useEffect,useState} from 'react';
-import { Button, Space,Typography,Divider,List } from 'antd';
+import { useHistory,Link } from "react-router-dom";
+import { Typography,Divider,List } from 'antd';
 import { Pie } from '@ant-design/charts';
 import './Home.css';
-
+import HomePageBannerOne from '../../images/homepage-banner1.png'
+import FooobankBanner from '../../images/foobankbanner.png'
+import HelpingHandBanner from '../../images/helpingHnadBanner.png'
 import axios from 'axios'
 
 const {Title} = Typography;
 
 export default function Home(){
+  const history = useHistory();
    const data= [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
    var dataPie = [
     {
@@ -125,11 +129,31 @@ const [rankList, setRankList] = useState([]);
      </div>
      <Divider style={{width:'100%'}} type='horizontal' />
      <div className='section' >
-            <div className='side'>Side1</div>
-            <Divider style={{height:'100%'}} type='vertical' />
-            <div className='side'>Side2</div>
-            <Divider style={{height:'100%'}} type='vertical' />
-            <div className='side'>Side3</div>
+            <div  onClick={()=>{history.push('/Open-data-cw2/search')}} className='side'>
+              <div className='homepage-banner'>
+                <div className='banner-mask'></div>
+                <img src={HomePageBannerOne} alt='banner' className='banner-img'/>
+                <div className='banner-text' >
+                  Explore Project
+                </div>
+              </div>
+            </div>
+            
+            <div className='side'>
+            <div className='homepage-banner'>
+                <div className='banner-mask'></div>
+                <img src={FooobankBanner} alt='banner' className='banner-img'/>
+                <div className='banner-text' >Food Bank</div>
+              </div>
+            </div>
+            
+            <div onClick={()=>{history.push('/Open-data-cw2/addProject')}}  className='side'>
+            <div  className='homepage-banner'>
+                <div className='banner-mask'></div>
+                <img src={HelpingHandBanner} alt='banner' className='banner-img'/>
+                <div className='banner-text' >Start Project</div>
+              </div>
+            </div>
      </div>
   
     </div>)

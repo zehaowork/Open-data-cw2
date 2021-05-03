@@ -1,0 +1,242 @@
+{
+  "ObesityData":[
+    {
+      "Region Code": "E12000007",
+      "Area name": "London",
+      "All persons": "107,675",
+      "Male": "35,865",
+      "Female": "71,805"
+    },
+    {
+      "Region Code": "E09000001",
+      "Area name": "City of London",
+      "All persons": "80",
+      "Male": "40",
+      "Female": "40"
+    },
+    {
+      "Region Code": "E09000002",
+      "Area name": "Barking and Dagenham",
+      "All persons": "2,875",
+      "Male": "860",
+      "Female": "2,015"
+    },
+    {
+      "Region Code": "E09000003",
+      "Area name": "Barnet",
+      "All persons": "3,240",
+      "Male": "1,050",
+      "Female": "2,190"
+    },
+    {
+      "Region Code": "E09000004",
+      "Area name": "Bexley",
+      "All persons": "3,225",
+      "Male": "1,235",
+      "Female": "1,990"
+    },
+    {
+      "Region Code": "E09000005",
+      "Area name": "Brent",
+      "All persons": "6,145",
+      "Male": "2,080",
+      "Female": "4,065"
+    },
+    {
+      "Region Code": "E09000006",
+      "Area name": "Bromley",
+      "All persons": "3,815",
+      "Male": "1,200",
+      "Female": "2,615"
+    },
+    {
+      "Region Code": "E09000007",
+      "Area name": "Camden",
+      "All persons": "1,580",
+      "Male": "560",
+      "Female": "1,020"
+    },
+    {
+      "Region Code": "E09000008",
+      "Area name": "Croydon",
+      "All persons": "3,720",
+      "Male": "1,120",
+      "Female": "2,600"
+    },
+    {
+      "Region Code": "E09000009",
+      "Area name": "Ealing",
+      "All persons": "6,590",
+      "Male": "2,180",
+      "Female": "4,410"
+    },
+    {
+      "Region Code": "E09000010",
+      "Area name": "Enfield",
+      "All persons": "3,095",
+      "Male": "1,045",
+      "Female": "2,050"
+    },
+    {
+      "Region Code": "E09000011",
+      "Area name": "Greenwich",
+      "All persons": "3,265",
+      "Male": "1,045",
+      "Female": "2,220"
+    },
+    {
+      "Region Code": "E09000012",
+      "Area name": "Hackney",
+      "All persons": "4,895",
+      "Male": "1,235",
+      "Female": "3,655"
+    },
+    {
+      "Region Code": "E09000013",
+      "Area name": "Hammersmith and Fulham",
+      "All persons": "3,135",
+      "Male": "995",
+      "Female": "2,135"
+    },
+    {
+      "Region Code": "E09000014",
+      "Area name": "Haringey",
+      "All persons": "2,285",
+      "Male": "710",
+      "Female": "1,575"
+    },
+    {
+      "Region Code": "E09000015",
+      "Area name": "Harrow",
+      "All persons": "4,010",
+      "Male": "1,355",
+      "Female": "2,655"
+    },
+    {
+      "Region Code": "E09000016",
+      "Area name": "Havering",
+      "All persons": "3,175",
+      "Male": "1,230",
+      "Female": "1,945"
+    },
+    {
+      "Region Code": "E09000017",
+      "Area name": "Hillingdon",
+      "All persons": "3,610",
+      "Male": "1,315",
+      "Female": "2,295"
+    },
+    {
+      "Region Code": "E09000018",
+      "Area name": "Hounslow",
+      "All persons": "2,980",
+      "Male": "1,095",
+      "Female": "1,885"
+    },
+    {
+      "Region Code": "E09000019",
+      "Area name": "Islington",
+      "All persons": "1,980",
+      "Male": "660",
+      "Female": "1,320"
+    },
+    {
+      "Region Code": "E09000022",
+      "Area name": "Lambeth",
+      "All persons": "6,170",
+      "Male": "1,890",
+      "Female": "4,280"
+    },
+    {
+      "Region Code": "E09000023",
+      "Area name": "Lewisham",
+      "All persons": "3,870",
+      "Male": "1,125",
+      "Female": "2,745"
+    },
+    {
+      "Region Code": "E09000024",
+      "Area name": "Merton",
+      "All persons": "1,655",
+      "Male": "660",
+      "Female": "995"
+    },
+    {
+      "Region Code": "E09000025",
+      "Area name": "Newham",
+      "All persons": "4,200",
+      "Male": "1,360",
+      "Female": "2,840"
+    },
+    {
+      "Region Code": "E09000026",
+      "Area name": "Redbridge",
+      "All persons": "3,085",
+      "Male": "1,090",
+      "Female": "1,995"
+    },
+    {
+      "Region Code": "E09000027",
+      "Area name": "Richmond upon Thames",
+      "All persons": "1,290",
+      "Male": "510",
+      "Female": "785"
+    },
+    {
+      "Region Code": "E09000028",
+      "Area name": "Southwark",
+      "All persons": "7,005",
+      "Male": "2,280",
+      "Female": "4,725"
+    },
+    {
+      "Region Code": "E09000029",
+      "Area name": "Sutton",
+      "All persons": "1,735",
+      "Male": "610",
+      "Female": "1,125"
+    },
+    {
+      "Region Code": "E09000030",
+      "Area name": "Tower Hamlets",
+      "All persons": "3,215",
+      "Male": "1,045",
+      "Female": "2,170"
+    },
+    {
+      "Region Code": "E09000031",
+      "Area name": "Waltham Forest",
+      "All persons": "3,100",
+      "Male": "975",
+      "Female": "2,125"
+    },
+    {
+      "Region Code": "E09000032",
+      "Area name": "Wandsworth",
+      "All persons": "2,550",
+      "Male": "995",
+      "Female": "1,555"
+    },
+    {
+      "Region Code": "E09000020",
+      "Area name": "Kensington and Chelsea",
+      "All persons": "1,495",
+      "Male": "580",
+      "Female": "920"
+    },
+    {
+      "Region Code": "E09000021",
+      "Area name": "Kingston upon Thames",
+      "All persons": "1,495",
+      "Male": "580",
+      "Female": "915"
+    },
+    {
+      "Region Code": "E09000033",
+      "Area name": "Westminster",
+      "All persons": "3,110",
+      "Male": "1,155",
+      "Female": "1,955"
+    }
+   ]
+}

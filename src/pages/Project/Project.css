@@ -1,0 +1,24 @@
+.project-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  border: solid 1px grey;
+}
+.project-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.project-form {
+  display: flex;
+  flex-direction: row;
+}
+.project-div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}

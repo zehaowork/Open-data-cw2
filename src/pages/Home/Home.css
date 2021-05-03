@@ -17,6 +17,7 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  height: 100vh;
 }
 .middle {
   flex: 3;
@@ -77,4 +78,27 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+}
+
+.homepage-banner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.banner-mask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #1990ff;
+  opacity: 0.3;
+}
+.banner-mask:hover {
+  transition: opacity 1s;
+  opacity: 1;
+}
+.banner-img {
+  width: 100%;
+  height: 100%;
 }

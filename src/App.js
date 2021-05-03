@@ -12,6 +12,7 @@ import Search from './pages/Search/Search'
 
 import logoIcon from './images/logo-white.png'
 import { Layout,Menu } from 'antd';
+import Project from "./pages/Project/Project";
 
 const { Header, Footer, Content } = Layout;
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/Open-data-cw2/contact"  component={Contact} />
           <Route path="/Open-data-cw2/donate" component={Donate} />
           <Route path="/Open-data-cw2/search" component={Search} />
+          <Route path="/Open-data-cw2/addProject" component={Project} />
         </Switch>
   </Content>
   <Footer style={{ textAlign: 'center' }}>Charitable ©2021 Created by Group 9</Footer>

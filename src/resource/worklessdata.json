@@ -1,0 +1,196 @@
+{
+  "WorkLessData":[
+    {
+      "Code": "E09000002",
+      "Area name": "Barking and Dagenham",
+      "Workless Thousands": 9.8,
+      "Workless Percent": 14.7
+    },
+    {
+      "Code": "E09000003",
+      "Area name": "Barnet",
+      "Workless Thousands": 11.5,
+      "Workless Percent": 9.4
+    },
+    {
+      "Code": "E09000004",
+      "Area name": "Bexley",
+      "Workless Thousands": 10.9,
+      "Workless Percent": 14.3
+    },
+    {
+      "Code": "E09000005",
+      "Area name": "Brent",
+      "Workless Thousands": 9.9,
+      "Workless Percent": 9.9
+    },
+    {
+      "Code": "E09000006",
+      "Area name": "Bromley",
+      "Workless Thousands": 8.7,
+      "Workless Percent": 8.3
+    },
+    {
+      "Code": "E09000007",
+      "Area name": "Camden",
+      "Workless Thousands": 17.3,
+      "Workless Percent": 17.9
+    },
+    {
+      "Code": "E09000008",
+      "Area name": "Croydon",
+      "Workless Thousands": 9.8,
+      "Workless Percent": 7.7
+    },
+    {
+      "Code": "E09000009",
+      "Area name": "Ealing",
+      "Workless Thousands": 7.4,
+      "Workless Percent": 7.2
+    },
+    {
+      "Code": "E09000010",
+      "Area name": "Enfield",
+      "Workless Thousands": 17.1,
+      "Workless Percent": 17.1
+    },
+    {
+      "Code": "E09000011",
+      "Area name": "Greenwich",
+      "Workless Thousands": 7.3,
+      "Workless Percent": 8
+    },
+    {
+      "Code": "E09000012",
+      "Area name": "Hackney",
+      "Workless Thousands": 12.4,
+      "Workless Percent": 13
+    },
+    {
+      "Code": "E09000013",
+      "Area name": "Hammersmith and Fulham",
+      "Workless Thousands": 9,
+      "Workless Percent": 14.6
+    },
+    {
+      "Code": "E09000014",
+      "Area name": "Haringey",
+      "Workless Thousands": 13.5,
+      "Workless Percent": 14.4
+    },
+    {
+      "Code": "E09000015",
+      "Area name": "Harrow",
+      "Workless Thousands": 7.6,
+      "Workless Percent": 11.5
+    },
+    {
+      "Code": "E09000016",
+      "Area name": "Havering",
+      "Workless Thousands": 9,
+      "Workless Percent": 11.6
+    },
+    {
+      "Code": "E09000017",
+      "Area name": "Hillingdon",
+      "Workless Thousands": 12.9,
+      "Workless Percent": 13.6
+    },
+    {
+      "Code": "E09000018",
+      "Area name": "Hounslow",
+      "Workless Thousands": 12.6,
+      "Workless Percent": 13.8
+    },
+    {
+      "Code": "E09000019",
+      "Area name": "Islington",
+      "Workless Thousands": 11.5,
+      "Workless Percent": 13.6
+    },
+    {
+      "Code": "E09000020",
+      "Area name": "Kensington and Chelsea",
+      "Workless Thousands": 11.8,
+      "Workless Percent": 21.2
+    },
+    {
+      "Code": "E09000021",
+      "Area name": "Kingston upon Thames",
+      "Workless Thousands": 6.3,
+      "Workless Percent": 11.7
+    },
+    {
+      "Code": "E09000022",
+      "Area name": "Lambeth",
+      "Workless Thousands": 14.3,
+      "Workless Percent": 12.2
+    },
+    {
+      "Code": "E09000023",
+      "Area name": "Lewisham",
+      "Workless Thousands": 11.5,
+      "Workless Percent": 10.3
+    },
+    {
+      "Code": "E09000024",
+      "Area name": "Merton",
+      "Workless Thousands": 4.9,
+      "Workless Percent": 7.5
+    },
+    {
+      "Code": "E09000025",
+      "Area name": "Newham",
+      "Workless Thousands": 13.3,
+      "Workless Percent": 11.6
+    },
+    {
+      "Code": "E09000026",
+      "Area name": "Redbridge",
+      "Workless Thousands": 8,
+      "Workless Percent": 9.1
+    },
+    {
+      "Code": "E09000027",
+      "Area name": "Richmond upon Thames",
+      "Workless Thousands": 3.7,
+      "Workless Percent": 6.2
+    },
+    {
+      "Code": "E09000028",
+      "Area name": "Southwark",
+      "Workless Thousands": 14.9,
+      "Workless Percent": 12.5
+    },
+    {
+      "Code": "E09000029",
+      "Area name": "Sutton",
+      "Workless Thousands": 7.6,
+      "Workless Percent": 11.6
+    },
+    {
+      "Code": "E09000030",
+      "Area name": "Tower Hamlets",
+      "Workless Thousands": 16.7,
+      "Workless Percent": 14.8
+    },
+    {
+      "Code": "E09000031",
+      "Area name": "Waltham Forest",
+      "Workless Thousands": 13.7,
+      "Workless Percent": 14.1
+    },
+    {
+      "Code": "E09000032",
+      "Area name": "Wandsworth",
+      "Workless Thousands": 11,
+      "Workless Percent": 9.5
+    },
+    {
+      "Code": "E09000033",
+      "Area name": "Westminster",
+      "Workless Thousands": 15.2,
+      "Workless Percent": 16.1
+    }
+   ]
+}
