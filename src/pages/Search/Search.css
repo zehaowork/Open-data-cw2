@@ -9,11 +9,18 @@
   padding: 20px;
   overflow-y: scroll;
 }
-
+.result-holder {
+  flex: 3;
+  padding: 20px;
+  overflow-y: scroll;
+  align-items: center;
+  position: relative;
+}
 .result {
   flex: 3;
   padding: 20px;
   overflow-y: scroll;
+  align-items: center;
 }
 
 .entry {
@@ -31,4 +38,11 @@
 .divider-text {
   font-weight: bold;
   font-size: 20px;
+}
+
+.spinner-container {
+  position: fixed;
+  top: 50%;
+  left: 60%;
+  z-index: 1;
 }

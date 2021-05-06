@@ -18,15 +18,18 @@
   align-items: center;
   padding: 10px;
   height: 100vh;
+  background-color: #b2cde0;
 }
 .middle {
+  padding: 10px;
   flex: 3;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #6497b1;
 }
 
 .rank-list {
-  overflow-y: scroll;
 }
 .rank-item {
   display: flex;
@@ -69,15 +72,13 @@
 }
 
 .description {
-  flex: 1;
   padding: 10px;
 }
 .pie-chart {
-  flex: 2;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
 }
 
 .homepage-banner {
@@ -91,7 +92,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #1990ff;
+  background-color: #b2cde0;
   opacity: 0.3;
 }
 .banner-mask:hover {

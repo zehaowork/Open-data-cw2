@@ -1,9 +1,11 @@
 import React,{useEffect,useState} from 'react';
 import './Search.css';
 import 'antd/dist/antd.css';
-import { Input, DatePicker,Tabs,Select,Typography,InputNumber,Divider,Button,List,Space } from 'antd';
-import { CarOutlined,UserOutlined,HomeOutlined} from '@ant-design/icons';
+import { Input, Pagination,Tabs,Select,Typography,Spin,Divider,Button,List,Space } from 'antd';
+
+import { CarOutlined,UserOutlined,HomeOutlined,MoneyCollectOutlined} from '@ant-design/icons';
 import axios from 'axios';
+import ImgHolder from '../../images/img-holder.jpeg'
 const { Title } = Typography;
 const { TabPane } = Tabs;
 
@@ -13,7 +15,11 @@ export default  function Search(){
   const [categoryList, setCategoryList] = useState([]);
   const [result, setResult] = useState([]);
   const [tabNum, setTabNum] = useState('1');
+  const [listLoading, setListLoading] = useState(false);
+  const [pageCount, setPageCount] = useState(0);
+  const [totalItem, setTotalItem] = useState(0);
   const [projectResult, setProjectResult] = useState([]);
+  const [charitableProjectResult, setCharitableProjectResult] = useState([]);
   // const [startDate, setStartDate] = useState("");
   // const [endDate, setEndDate] = useState("");
 
@@ -21,6 +27,12 @@ export default  function Search(){
   const [category, setCategory] = useState("");
   const [keyword, setKeyword] = useState("");
   const [postcode, setPostcode] = useState("");
+
+
+  const onPaginationChange = ()=>{
+    
+    getProject();
+  }
 
   const getCountryList =()=>{
     axios.get('https://us-central1-open-data-cw2.cloudfunctions.net/getCountries').then(res=>{
@@ -36,25 +48,63 @@ export default  function Search(){
   }
 
   const getResult = ()=>{
+    setListLoading(true);
     axios.get('https://us-central1-open-data-cw2.cloudfunctions.net/searchCharities?postcode='+postcode+'&search='+keyword).then(res=>{
       console.log(res.data);
       setResult(res.data.CHC.getCharities.list)
+    }).finally(res=>{
+      setListLoading(false);
     })
   };
 
   const getProject = ()=>{
- 
-   console.log(category)
-    axios.get('https://us-central1-open-data-cw2.cloudfunctions.net/searchProjects?keywords='+keyword+'&themeId='+category+'&start=0&country='+country).then(res=>{
+    setListLoading(true);
+    axios.get('https://us-central1-open-data-cw2.cloudfunctions.net/searchProjects?keywords='+keyword+'&themeId='+category+'&start='+(pageCount*10)+'&country='+country).then(res=>{
       setProjectResult(res.data.search.response.projects.project)
-      console.log(res.data)
+      setTotalItem(res.data.search.response.numberFound);
+      setPageCount(pageCount+1);
+      setListLoading(false);
+    }).catch(err=>{
+      setListLoading(false);
     })
   }
+
+  const getOurProject = ()=>{
+    if(country !== "" && category !==""){
+      setListLoading(true);
+      axios.get("https://us-central1-open-data-cw2.cloudfunctions.net/getOurProjectsByThemeCountry?country="+country+"&theme="+category).then(res=>{
+        console.log(res.data.data);
+        setCharitableProjectResult(res.data.data);
+      }).finally(res=>{
+        setListLoading(false);
+      });
+    }
+    else if(country !== "" && category === ""){
+      axios.get("https://us-central1-open-data-cw2.cloudfunctions.net/getOurProjectsByCountry?country="+country).then(res=>{
+        console.log(res.data);
+        setCharitableProjectResult(res.data.data);
+      }).finally(res=>{
+        setListLoading(false);
+      });
+    }
+    else if(country ==="" && category !==''){
+      axios.get("https://us-central1-open-data-cw2.cloudfunctions.net/getOurProjectsByTheme?theme="+category).then(res=>{
+        console.log(res.data);
+        setCharitableProjectResult(res.data.data);
+      }).finally(res=>{
+        setListLoading(false);
+      });
+    }
+    else{
+      alert("Please enter a some search filter.");
+    }
+  };
 
   useEffect(() => {
    getCountryList();
    getCategoryList();
   }, [])
+  
 
   const renderCountryOption = countryList.map(el=>{
     return <Select.Option value={el} >{el}</Select.Option>
@@ -86,17 +136,18 @@ export default  function Search(){
       setCategory(value);
     }
 
-    const switchTab =()=>{
-      setTabNum(tabNum==='1'?'2':'1');
+    const switchTab =(activeKey)=>{
+      setKeyword("");
+      setTabNum(activeKey);
     };
         
         
 
     return (<div className='content'>
-     
+      
         <div className='search'>
         <Title level={3} >Project Search</Title>
-        <Tabs onChange={()=>{switchTab();}} defaultActiveKey="1" >
+        <Tabs onChange={switchTab} defaultActiveKey="1" >
     <TabPane tab="Project" key="1">
     <div className='entry'>
             <div>
@@ -258,18 +309,42 @@ export default  function Search(){
          getResult();
        }} block={true} type="primary" size='large'>Search</Button>
     </TabPane>
-    
+    <TabPane tab="Charitable Project" key='3' >
+    <div className='entry'>
+            <div>
+            Country:
+            </div>
+            <Select onChange={handleCountryChange} style={{width:'60%'}} placeholder="Country" >
+              {renderCountryOption}
+            </Select>
+        </div>
+        <div className='entry'>
+            <div>
+            Category:
+            </div>
+            <Select onChange={handleCategoryChange} style={{width:'60%'}} placeholder="Category" >
+              {renderCategoryOption}
+            </Select>
+        </div>
+        <Button onClick={()=>{
+        getOurProject();
+       }} block={true} type="primary" size='large'>Search</Button>
+    </TabPane>
+
   </Tabs>
        
         </div>
         <Divider style={{height:'100%'}} type='vertical' />
+        <div  className='result-holder'>
+       {listLoading &&  <div className='spinner-container' ><Spin  size='large' /></div>}
         {tabNum ==='1'?<div className='result'>
         <Title level={3} >Search Result</Title>
-        <List dataSource={projectResult} 
+        <List style={{height:'100%'}} dataSource={projectResult} 
         itemLayout="vertical"
         size="large"
         renderItem={item => (
             <List.Item
+            key={item.id}
             extra={
                 <img
                 
@@ -281,7 +356,7 @@ export default  function Search(){
               }
               key={item.title}
               actions={[
-                <IconText icon={CarOutlined} text="156km" key="list-vertical-star-o" />,
+                <IconText icon={MoneyCollectOutlined} text={item.funding.toFixed(2)+' / '+item.goal.toFixed(2)} key="list-vertical-star-o" />,
                 <IconText icon={UserOutlined} text={item.numberOfDonations+"ppl"} key="list-vertical-star-o" />,
                 <IconText icon={HomeOutlined} text={item.contactAddress} key="list-vertical-star-o" />
               ]}
@@ -295,8 +370,8 @@ export default  function Search(){
             </List.Item>
           )}/ >
         
-    
-        </div>:<div className='result'>
+        
+        </div>:tabNum ==='2'?<div className='result'>
         <Title level={3} >Search Result</Title>
         <List dataSource={result} 
         itemLayout="vertical"
@@ -308,12 +383,12 @@ export default  function Search(){
                   width={200}
                   height={200}
                   alt="logo"
-                  src={item.image?item.image.logo.small:"https://picsum.photos/200/300"}
+                  src={item.image?item.image.logo.small:ImgHolder}
                 />
               }
               key={item.title}
               actions={[
-                <IconText icon={CarOutlined} text="156km" key="list-vertical-star-o" />,
+                // <IconText icon={CarOutlined} text="156km" key="list-vertical-star-o" />,
                 <IconText icon={UserOutlined} text={item.numPeople.trustees+item.numPeople.employees+item.numPeople.volunteers+"ppl"} key="list-vertical-star-o" />,
                 <IconText icon={HomeOutlined} text={item.geo.postcode}key="list-vertical-star-o" />
               ]}
@@ -327,7 +402,45 @@ export default  function Search(){
             </List.Item>
           )}/ >
         
-    
+        
+        </div>:<div className='result'>
+        <Title level={3} >Search Result</Title>
+        <List style={{height:'100%'}} dataSource={charitableProjectResult} 
+        itemLayout="vertical"
+        size="large"
+        renderItem={item => (
+            <List.Item
+            key={item.id}
+            extra={
+                <img
+                
+                  width={200}
+                  height={200}
+                  alt="logo"
+                  src={ImgHolder}
+                />
+              }
+              
+              actions={[
+                
+                <IconText icon={UserOutlined} text={item.personGoal} key="list-vertical-star-o" />,
+                <IconText icon={MoneyCollectOutlined} text={item.monetaryGoal} key="list-vertical-star-o" />,
+                <IconText icon={HomeOutlined} text={item.contactAddress} key="list-vertical-star-o" />
+              ]}
+              
+            >
+              <List.Item.Meta
+                title={<a href={item.contactUrl}>{item.title}</a>}
+                description={item.summary}
+              />
+              {item.content}
+            </List.Item>
+          )}/ >
+        
+        
         </div>}
+        {totalItem>10&&<Pagination onChange={onPaginationChange} current={pageCount} total={totalItem}  />}
+        </div>
+        
     </div>)
 }

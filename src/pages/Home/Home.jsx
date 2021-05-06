@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react';
-import { useHistory,Link } from "react-router-dom";
-import { Typography,Divider,List } from 'antd';
+import { useHistory } from "react-router-dom";
+import { Typography,Divider,List, Input, Button } from 'antd';
 import { Pie } from '@ant-design/charts';
 import './Home.css';
 import HomePageBannerOne from '../../images/homepage-banner1.png'
@@ -12,54 +12,20 @@ const {Title} = Typography;
 
 export default function Home(){
   const history = useHistory();
-   const data= [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
-   var dataPie = [
-    {
-      type: '分类一',
-      value: 27,
-    },
-    {
-      type: '分类二',
-      value: 25,
-    },
-    {
-      type: '分类三',
-      value: 18,
-    },
-    {
-      type: '分类四',
-      value: 15,
-    },
-    {
-      type: '分类五',
-      value: 10,
-    },
-    {
-      type: '其他',
-      value: 5,
-    },
-  ];
+  const [problem, setProblem] = useState([]);
+ 
   var config = {
     appendPadding: 10,
-    data: dataPie,
-    angleField: 'value',
-    colorField: 'type',
+    data: problem,
+    angleField: 'Value',
+    colorField: 'Problem',
     radius: 0.9,
-    label: {
-      type: 'inner',
-      offset: '-30%',
-      content: function content(_ref) {
-        var percent = _ref.percent;
-        return ''.concat(percent * 100, '%');
-      },
-      style: {
-        fontSize: 14,
-        textAlign: 'center',
-      },
-    },
+   
     interactions: [{ type: 'element-active' }],
   };
-  
+
+  const [postcode, setPostcode] = useState("");
+
 const [rankList, setRankList] = useState([]);
   useEffect(() => {
    testApi();
@@ -73,26 +39,47 @@ const [rankList, setRankList] = useState([]);
         })
     };
 
+    const getProblems = (value)=>{
+      axios.get('https://us-central1-open-data-cw2.cloudfunctions.net/getProblemOrderDictionary?postcode='+value).then(result=>{
+       let tmpArr = result.data;
+       tmpArr.forEach(el =>{
+         el.Value = parseInt(el.Value.toFixed(0));
+       })
+       console.log(tmpArr)
+        setProblem(tmpArr)
+    })
+    }
+
     return (<div className="home-content">
      <div className="section">
      <div className="side">
        
        
      </div>
-     <Divider style={{height:'100%'}} type='vertical' />
+     
+     {/* <Divider style={{height:'100%'}} type='vertical' /> */}
       <div className="middle">
-      <div className='pie-chart' >
-      <Pie {...config} />
-      </div>
-      <Divider style={{width:'100%'}} type='horizontal' />
       <div className='description' > 
           <Title level={2} >Title</Title>
           <Typography.Text>Write Something Here...</Typography.Text>
+        
+          
+
       </div>
+     
+      <Title level={2} >Problems around your Area (UK only)</Title>
+      <Input.Search style={{width:'300px'}} placeholder='Enter your postcode here'  onSearch={getProblems}  enterButton />
+      {problem.length >0 && <div className='pie-chart' >
+        
+        <Pie {...config} />
+        <Button onClick={()=>{history.push('/Open-data-cw2/addProject')}} type='primary' >Start A Volunteering Project To Help！</Button>
+        </div>}
+    
+      
       </div>
-      <Divider style={{height:'100%'}} type='vertical' />
+      {/* <Divider style={{height:'100%'}} type='vertical' /> */}
       <div className="side" >
-      <Title level={2} >Top Item Needed</Title>
+      <Title level={2} >Top Item Needed around UK</Title>
         <div className='rank-list' >
         <List bordered dataSource={rankList}
         header={
@@ -127,7 +114,7 @@ const [rankList, setRankList] = useState([]);
 
       </div>
      </div>
-     <Divider style={{width:'100%'}} type='horizontal' />
+     {/* <Divider style={{width:'100%'}} type='horizontal' /> */}
      <div className='section' >
             <div  onClick={()=>{history.push('/Open-data-cw2/search')}} className='side'>
               <div className='homepage-banner'>
@@ -139,7 +126,7 @@ const [rankList, setRankList] = useState([]);
               </div>
             </div>
             
-            <div className='side'>
+            <div  onClick={()=>{history.push('/Open-data-cw2/foodbank')}} className='side'>
             <div className='homepage-banner'>
                 <div className='banner-mask'></div>
                 <img src={FooobankBanner} alt='banner' className='banner-img'/>

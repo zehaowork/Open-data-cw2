@@ -3,13 +3,32 @@ import "./Contact.css";
 import { Typography } from "antd";
 import Banner from "../../images/banner.jpeg";
 
-import { Form, Input, Button } from "antd";
+import { Form, Input, Button,Spin,Modal } from "antd";
 const { Title } = Typography;
 const { TextArea } = Input;
 
 export default function Contact() {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isShowLoading, setIsShowLoading] = useState(false);
+  const submitForm = ()=>{
+  setIsShowLoading(true);
+    setTimeout(()=>{
+      setIsModalVisible(true);
+      setIsShowLoading(false);
+    },3000)
+  }
+
+  const onOk = ()=>{
+    setIsModalVisible(false)
+  }
   return (
+  
     <div className="contact-content">
+         {isShowLoading &&  <div className='contact-spinner-container' ><Spin  size='large' /></div>}
+        <Modal title="Successful" visible={isModalVisible} onOk={onOk} onCancel={onOk}>
+        <p>Thank you for your feedback!</p>
+        
+      </Modal>
       <div className="banner-section">
         <img alt="banner" className="banner" src={Banner} />
         <div className="banner-text">Contact Us</div>
@@ -30,7 +49,7 @@ export default function Contact() {
 
         <Form
           labelCol={{
-            span: 4,
+            span: 5,
           }}
           wrapperCol={{
             span: 16,
@@ -51,7 +70,7 @@ export default function Contact() {
           </Form.Item>
 
           <Form.Item className="submit-button">
-            <Button>Submit</Button>
+            <Button onClick={()=>{submitForm();}} type="primary">Submit</Button>
           </Form.Item>
         </Form>
       </div>

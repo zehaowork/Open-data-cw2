@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
-  border: solid 1px grey;
+  border: solid 1px whitesmoke;
 }
 .project-entry {
   display: flex;
@@ -16,9 +16,15 @@
 .project-form {
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid whitesmoke;
+  padding: 20px 10px;
 }
 .project-div {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  margin: 0 10px;
+  border: 1px solid whitesmoke;
+  padding: 20px;
 }
