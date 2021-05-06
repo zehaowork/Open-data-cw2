@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/Open-data-cw2/static/css/main.1a16d880.chunk.css",
-    "main.js": "/Open-data-cw2/static/js/main.c99f8f88.chunk.js",
-    "main.js.map": "/Open-data-cw2/static/js/main.c99f8f88.chunk.js.map",
-    "runtime-main.js": "/Open-data-cw2/static/js/runtime-main.72716147.js",
-    "runtime-main.js.map": "/Open-data-cw2/static/js/runtime-main.72716147.js.map",
+    "main.css": "/Open-data-cw2/static/css/main.57574b94.chunk.css",
+    "main.js": "/Open-data-cw2/static/js/main.ff3c2880.chunk.js",
+    "main.js.map": "/Open-data-cw2/static/js/main.ff3c2880.chunk.js.map",
+    "runtime-main.js": "/Open-data-cw2/static/js/runtime-main.0d5b2080.js",
+    "runtime-main.js.map": "/Open-data-cw2/static/js/runtime-main.0d5b2080.js.map",
     "static/css/2.c51d807b.chunk.css": "/Open-data-cw2/static/css/2.c51d807b.chunk.css",
-    "static/js/2.ca01fee6.chunk.js": "/Open-data-cw2/static/js/2.ca01fee6.chunk.js",
-    "static/js/2.ca01fee6.chunk.js.map": "/Open-data-cw2/static/js/2.ca01fee6.chunk.js.map",
-    "static/js/3.ee7ed08b.chunk.js": "/Open-data-cw2/static/js/3.ee7ed08b.chunk.js",
-    "static/js/3.ee7ed08b.chunk.js.map": "/Open-data-cw2/static/js/3.ee7ed08b.chunk.js.map",
+    "static/js/2.64b59b8d.chunk.js": "/Open-data-cw2/static/js/2.64b59b8d.chunk.js",
+    "static/js/2.64b59b8d.chunk.js.map": "/Open-data-cw2/static/js/2.64b59b8d.chunk.js.map",
+    "static/js/3.32e0f7f0.chunk.js": "/Open-data-cw2/static/js/3.32e0f7f0.chunk.js",
+    "static/js/3.32e0f7f0.chunk.js.map": "/Open-data-cw2/static/js/3.32e0f7f0.chunk.js.map",
     "index.html": "/Open-data-cw2/index.html",
     "static/css/2.c51d807b.chunk.css.map": "/Open-data-cw2/static/css/2.c51d807b.chunk.css.map",
-    "static/css/main.1a16d880.chunk.css.map": "/Open-data-cw2/static/css/main.1a16d880.chunk.css.map",
-    "static/js/2.ca01fee6.chunk.js.LICENSE.txt": "/Open-data-cw2/static/js/2.ca01fee6.chunk.js.LICENSE.txt",
+    "static/css/main.57574b94.chunk.css.map": "/Open-data-cw2/static/css/main.57574b94.chunk.css.map",
+    "static/js/2.64b59b8d.chunk.js.LICENSE.txt": "/Open-data-cw2/static/js/2.64b59b8d.chunk.js.LICENSE.txt",
     "static/media/donate.712ecf2f.png": "/Open-data-cw2/static/media/donate.712ecf2f.png",
-    "static/media/logo-white.338cfa7b.png": "/Open-data-cw2/static/media/logo-white.338cfa7b.png"
+    "static/media/foobankbanner.e7a54760.png": "/Open-data-cw2/static/media/foobankbanner.e7a54760.png",
+    "static/media/helpingHnadBanner.be0f9b42.png": "/Open-data-cw2/static/media/helpingHnadBanner.be0f9b42.png",
+    "static/media/homepage-banner1.2c77a6d0.png": "/Open-data-cw2/static/media/homepage-banner1.2c77a6d0.png",
+    "static/media/logo-white.338cfa7b.png": "/Open-data-cw2/static/media/logo-white.338cfa7b.png",
+    "static/media/rsz_foodbank.6e1bf1da.jpeg": "/Open-data-cw2/static/media/rsz_foodbank.6e1bf1da.jpeg",
+    "static/media/volunteering.45ffa96c.jpeg": "/Open-data-cw2/static/media/volunteering.45ffa96c.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.72716147.js",
+    "static/js/runtime-main.0d5b2080.js",
     "static/css/2.c51d807b.chunk.css",
-    "static/js/2.ca01fee6.chunk.js",
-    "static/css/main.1a16d880.chunk.css",
-    "static/js/main.c99f8f88.chunk.js"
+    "static/js/2.64b59b8d.chunk.js",
+    "static/css/main.57574b94.chunk.css",
+    "static/js/main.ff3c2880.chunk.js"
   ]
 }
