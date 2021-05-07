@@ -1,0 +1,492 @@
+[
+  {
+"Region":"UK" ,
+"value":1091282,
+"date":"2014-15"    
+ },
+  {
+"Region":"UK", 
+"value":1112395,
+"date":"2015-16"    
+ },
+  {
+"Region":"UK" ,
+"value":1201302,
+"date":"2016-17"    
+ },
+  {
+"Region":"UK" ,
+"value":1354388,
+"date":"2017-18"    
+ },
+  {
+"Region":"UK" ,
+"value":1606244,
+"date":"2018-19"    
+ },
+  {
+"Region":"UK" ,
+"value":1906625,
+"date":"2019-20"    
+ },
+  {
+"Region":"UK" ,
+"value":2537198,
+"date":"2020-21"    
+ },
+  {
+"Region":"England" ,
+"value":866481,
+"date":"2014-15"    
+ },
+  {
+"Region":"England", 
+"value":863870,
+"date":"2015-16"    
+ },
+  {
+"Region":"England" ,
+"value":920170,
+"date":"2016-17"    
+ },
+  {
+"Region":"England" ,
+"value":1046807,
+"date":"2017-18"    
+ },
+  {
+"Region":"England" ,
+"value":1235892,
+"date":"2018-19"    
+ },
+  {
+"Region":"England" ,
+"value":1488038,
+"date":"2019-20"    
+ },
+  {
+"Region":"England" ,
+"value":2090989,
+"date":"2020-21"    
+ },
+  {
+"Region":"Scotland" ,
+"value":119212,
+"date":"2014-15"    
+ },
+  {
+"Region":"Scotland", 
+"value":135943,
+"date":"2015-16"    
+ },
+  {
+"Region":"Scotland" ,
+"value":150095,
+"date":"2016-17"    
+ },
+  {
+"Region":"Scotland" ,
+"value":173526,
+"date":"2017-18"    
+ },
+  {
+"Region":"Scotland" ,
+"value":217006,
+"date":"2018-19"    
+ },
+  {
+"Region":"Scotland" ,
+"value":238561,
+"date":"2019-20"    
+ },
+  {
+"Region":"Scotland" ,
+"value":221554,
+"date":"2020-21"    
+ },
+  {
+"Region":"Wales" ,
+"value":87935,
+"date":"2014-15"    
+ },
+  {
+"Region":"Wales", 
+"value":86314,
+"date":"2015-16"    
+ },
+  {
+"Region":"Wales" ,
+"value":97144,
+"date":"2016-17"    
+ },
+  {
+"Region":"Wales" ,
+"value":100362,
+"date":"2017-18"    
+ },
+  {
+"Region":"Wales" ,
+"value":116087,
+"date":"2018-19"    
+ },
+  {
+"Region":"Wales" ,
+"value":134892,
+"date":"2019-20"    
+ },
+  {
+"Region":"Wales" ,
+"value":145828,
+"date":"2020-21"    
+ },
+  {
+"Region":"Northern Ireland" ,
+"value":17654,
+"date":"2014-15"    
+ },
+  {
+"Region":"Northern Ireland", 
+"value":26268,
+"date":"2015-16"    
+ },
+  {
+"Region":"Northern Ireland" ,
+"value":33893,
+"date":"2016-17"    
+ },
+  {
+"Region":"Northern Ireland" ,
+"value":33693,
+"date":"2017-18"    
+ },
+  {
+"Region":"Northern Ireland" ,
+"value":37259,
+"date":"2018-19"    
+ },
+  {
+"Region":"Northern Ireland" ,
+"value":45134,
+"date":"2019-20"    
+ },
+  {
+"Region":"Northern Ireland" ,
+"value":78827,
+"date":"2020-21"    
+ },
+  {
+"Region":"North East" ,
+"value":88248,
+"date":"2014-15"    
+ },
+  {
+"Region":"North East", 
+"value":76523,
+"date":"2015-16"    
+ },
+  {
+"Region":"North East" ,
+"value":62280,
+"date":"2016-17"    
+ },
+  {
+"Region":"North East" ,
+"value":65218,
+"date":"2017-18"    
+ },
+  {
+"Region":"North East" ,
+"value":89479,
+"date":"2018-19"    
+ },
+  {
+"Region":"North East" ,
+"value":98521,
+"date":"2019-20"    
+ },
+  {
+"Region":"North East" ,
+"value":124224,
+"date":"2020-21"    
+ },
+  {
+"Region":"North West" ,
+"value":158079,
+"date":"2014-15"    
+ },
+  {
+"Region":"North West", 
+"value":160803,
+"date":"2015-16"    
+ },
+  {
+"Region":"North West" ,
+"value":175645,
+"date":"2016-17"    
+ },
+  {
+"Region":"North West" ,
+"value":198830,
+"date":"2017-18"    
+ },
+  {
+"Region":"North West" ,
+"value":225188,
+"date":"2018-19"    
+ },
+  {
+"Region":"North West" ,
+"value":253772,
+"date":"2019-20"    
+ },
+  {
+"Region":"North West" ,
+"value":313015,
+"date":"2020-21"    
+ },
+  {
+"Region":"Yorkshire & Humberside" ,
+"value":58939,
+"date":"2014-15"    
+ },
+  {
+"Region":"Yorkshire & Humberside", 
+"value":66303,
+"date":"2015-16"    
+ },
+  {
+"Region":"Yorkshire & Humberside" ,
+"value":70307,
+"date":"2016-17"    
+ },
+  {
+"Region":"Yorkshire & Humberside" ,
+"value":79502,
+"date":"2017-18"    
+ },
+  {
+"Region":"Yorkshire & Humberside" ,
+"value":90245,
+"date":"2018-19"    
+ },
+  {
+"Region":"Yorkshire & Humberside" ,
+"value":108148,
+"date":"2019-20"    
+ },
+  {
+"Region":"Yorkshire & Humberside" ,
+"value":12226,
+"date":"2020-21"    
+ },
+  {
+"Region":"West Midlands" ,
+"value":104374,
+"date":"2014-15"    
+ },
+  {
+"Region":"West Midlands", 
+"value":103702,
+"date":"2015-16"    
+ },
+  {
+"Region":"West Midlands" ,
+"value":111760,
+"date":"2016-17"    
+ },
+  {
+"Region":"West Midlands" ,
+"value":121039,
+"date":"2017-18"    
+ },
+  {
+"Region":"West Midlands" ,
+"value":142900,
+"date":"2018-19"    
+ },
+  {
+"Region":"West Midlands" ,
+"value":169137,
+"date":"2019-20"    
+ },
+  {
+"Region":"West Midlands" ,
+"value":226237,
+"date":"2020-21"    
+ },
+  {
+"Region":"East Midlands" ,
+"value":45484,
+"date":"2014-15"    
+ },
+  {
+"Region":"East Midlands", 
+"value":49366,
+"date":"2015-16"    
+ },
+  {
+"Region":"East Midlands" ,
+"value":56791,
+"date":"2016-17"    
+ },
+  {
+"Region":"East Midlands" ,
+"value":67078,
+"date":"2017-18"    
+ },
+  {
+"Region":"East Midlands" ,
+"value":78229,
+"date":"2018-19"    
+ },
+  {
+"Region":"East Midlands" ,
+"value":101785,
+"date":"2019-20"    
+ },
+  {
+"Region":"East Midlands" ,
+"value":133890,
+"date":"2020-21"    
+ },
+  {
+"Region":"East" ,
+"value":102319,
+"date":"2014-15"    
+ },
+  {
+"Region":"East", 
+"value":103668,
+"date":"2015-16"    
+ },
+  {
+"Region":"East" ,
+"value":116356,
+"date":"2016-17"    
+ },
+  {
+"Region":"East" ,
+"value":130493,
+"date":"2017-18"    
+ },
+  {
+"Region":"East" ,
+"value":157243,
+"date":"2018-19"    
+ },
+  {
+"Region":"East" ,
+"value":"190039",
+"date":"2019-20"    
+ },
+  {
+"Region":"East" ,
+"value":244595,
+"date":"2020-21"    
+ },
+  {
+"Region":"London" ,
+"value":108373,
+"date":"2014-15"    
+ },
+  {
+"Region":"London", 
+"value":112124,
+"date":"2015-16"    
+ },
+  {
+"Region":"London" ,
+"value":113701,
+"date":"2016-17"    
+ },
+  {
+"Region":"London" ,
+"value":137923,
+"date":"2017-18"    
+ },
+  {
+"Region":"London" ,
+"value":169734,
+"date":"2018-19"    
+ },
+  {
+"Region":"London" ,
+"value":204187,
+"date":"2019-20"    
+ },
+  {
+"Region":"London" ,
+"value":421426,
+"date":"2020-21"    
+ },
+  {
+"Region":"South West" ,
+"value":100188,
+"date":"2014-15"    
+ },
+  {
+"Region":"South West", 
+"value":93701,
+"date":"2015-16"    
+ },
+  {
+"Region":"South West" ,
+"value":104095,
+"date":"2016-17"    
+ },
+  {
+"Region":"South West" ,
+"value":121826,
+"date":"2017-18"    
+ },
+  {
+"Region":"South West" ,
+"value":133287,
+"date":"2018-19"    
+ },
+  {
+"Region":"South West" ,
+"value":163207,
+"date":"2019-20"    
+ },
+  {
+"Region":"South West" ,
+"value":201971,
+"date":"2020-21"    
+ },
+  {
+"Region":"South East" ,
+"value":100477,
+"date":"2014-15"    
+ },
+  {
+"Region":"South East", 
+"value":97680,
+"date":"2015-16"    
+ },
+  {
+"Region":"South East" ,
+"value":109235,
+"date":"2016-17"    
+ },
+  {
+"Region":"South East" ,
+"value":124898,
+"date":"2017-18"    
+ },
+  {
+"Region":"South East" ,
+"value":149587,
+"date":"2018-19"    
+ },
+  {
+"Region":"South East" ,
+"value":199242,
+"date":"2019-20"    
+ },
+  {
+"Region":"South East" ,
+"value":302905,
+"date":"2020-21"    
+ }
+]

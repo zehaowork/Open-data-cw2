@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import { Typography } from "antd";
-import Banner from "../../images/banner.jpeg";
+import Banner from "../../images/Contact us.jpg";
 
 import { Form, Input, Button,Spin,Modal } from "antd";
 const { Title } = Typography;
@@ -30,6 +30,7 @@ export default function Contact() {
         
       </Modal>
       <div className="banner-section">
+      <div className="all-banner-mask"></div>
         <img alt="banner" className="banner" src={Banner} />
         <div className="banner-text">Contact Us</div>
       </div>

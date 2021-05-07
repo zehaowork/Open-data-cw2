@@ -17,3 +17,14 @@
 .shop-item {
   margin: 20px;
 }
+
+.description {
+}
+
+.price {
+  text-align: center;
+  border-radius: 8px;
+  width: 70px;
+  background-color: #1990ff;
+  color: white;
+}

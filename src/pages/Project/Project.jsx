@@ -129,7 +129,10 @@ export default function Project(){
         <div className="banner-section" >
        <div className='food-bank-banner-mask'></div>
         <img alt="banner" className='banner' src={Banner} />
-        <div className="banner-text" >Start Volunteering Work</div>
+        
+        <div className="banner-text" >Start Volunteering Work
+        <div className='note-text' >Found a problem in your area, and had an idea to solve it with the help of others? Then start a volunteering project for free! You can also search for different volunteering projects by country and theme and sign up to help them out. </div>
+        </div>
         </div>
         
        <div class='project-form'>

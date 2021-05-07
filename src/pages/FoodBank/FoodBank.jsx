@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import axios from 'axios';
 import './FoodBank.css'
-import Banner from '../../images/rsz_foodbank.jpeg'
+import Banner from '../../images/Food bank.jpg'
 import {Input,Typography,Divider,Button,List,Space,Spin} from 'antd'
 import {HomeOutlined,PhoneOutlined} from '@ant-design/icons';
 const {Title} = Typography;
@@ -28,9 +28,11 @@ export default function FoodBank(){
     return<div className="food-bank-content">
         {isShowLoading &&  <div className='spinner-container' ><Spin  size='large' /></div>}
        <div className="banner-section" >
-       <div className='food-bank-banner-mask'></div>
+       <div className="all-banner-mask"></div>
         <img alt="banner" className='banner' src={Banner} />
-        <div className="banner-text" >Food Bank</div>
+        <div className="banner-text" >Food Bank
+        <div className='note-text' >This search engine allows you to see the food banks near your home and has a list of items they have reduced quantities of.  </div>
+        </div>
         </div>
         <div className="food-bank-search"  >
             <div className="search" >

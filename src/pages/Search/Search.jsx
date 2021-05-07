@@ -80,6 +80,7 @@ export default  function Search(){
       });
     }
     else if(country !== "" && category === ""){
+      setListLoading(true);
       axios.get("https://us-central1-open-data-cw2.cloudfunctions.net/getOurProjectsByCountry?country="+country).then(res=>{
         console.log(res.data);
         setCharitableProjectResult(res.data.data);
@@ -88,6 +89,7 @@ export default  function Search(){
       });
     }
     else if(country ==="" && category !==''){
+      setListLoading(true);
       axios.get("https://us-central1-open-data-cw2.cloudfunctions.net/getOurProjectsByTheme?theme="+category).then(res=>{
         console.log(res.data);
         setCharitableProjectResult(res.data.data);
