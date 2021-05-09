@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Open-data-cw2/static/css/main.dd504cee.chunk.css",
-    "main.js": "/Open-data-cw2/static/js/main.2ce131ec.chunk.js",
-    "main.js.map": "/Open-data-cw2/static/js/main.2ce131ec.chunk.js.map",
+    "main.css": "/Open-data-cw2/static/css/main.9ab4957e.chunk.css",
+    "main.js": "/Open-data-cw2/static/js/main.2e6f0635.chunk.js",
+    "main.js.map": "/Open-data-cw2/static/js/main.2e6f0635.chunk.js.map",
     "runtime-main.js": "/Open-data-cw2/static/js/runtime-main.c1768c93.js",
     "runtime-main.js.map": "/Open-data-cw2/static/js/runtime-main.c1768c93.js.map",
     "static/css/2.c51d807b.chunk.css": "/Open-data-cw2/static/css/2.c51d807b.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.58cdf010.chunk.js.map": "/Open-data-cw2/static/js/3.58cdf010.chunk.js.map",
     "index.html": "/Open-data-cw2/index.html",
     "static/css/2.c51d807b.chunk.css.map": "/Open-data-cw2/static/css/2.c51d807b.chunk.css.map",
-    "static/css/main.dd504cee.chunk.css.map": "/Open-data-cw2/static/css/main.dd504cee.chunk.css.map",
+    "static/css/main.9ab4957e.chunk.css.map": "/Open-data-cw2/static/css/main.9ab4957e.chunk.css.map",
     "static/js/2.ce0a99b3.chunk.js.LICENSE.txt": "/Open-data-cw2/static/js/2.ce0a99b3.chunk.js.LICENSE.txt",
     "static/media/About us.c4ad290a.jpg": "/Open-data-cw2/static/media/About us.c4ad290a.jpg",
     "static/media/Contact us.6b9b3136.jpg": "/Open-data-cw2/static/media/Contact us.6b9b3136.jpg",
@@ -21,18 +21,18 @@
     "static/media/Shop.c8db68fd.jpg": "/Open-data-cw2/static/media/Shop.c8db68fd.jpg",
     "static/media/Support.eaa6d04d.jpg": "/Open-data-cw2/static/media/Support.eaa6d04d.jpg",
     "static/media/charitable-flow.475ba877.png": "/Open-data-cw2/static/media/charitable-flow.475ba877.png",
+    "static/media/charity-white.cd0b0702.png": "/Open-data-cw2/static/media/charity-white.cd0b0702.png",
     "static/media/donate.712ecf2f.png": "/Open-data-cw2/static/media/donate.712ecf2f.png",
     "static/media/foobankbanner.e7a54760.png": "/Open-data-cw2/static/media/foobankbanner.e7a54760.png",
     "static/media/helpingHnadBanner.be0f9b42.png": "/Open-data-cw2/static/media/helpingHnadBanner.be0f9b42.png",
     "static/media/homepage-banner1.2c77a6d0.png": "/Open-data-cw2/static/media/homepage-banner1.2c77a6d0.png",
-    "static/media/logo-white.338cfa7b.png": "/Open-data-cw2/static/media/logo-white.338cfa7b.png",
     "static/media/volunteering.45ffa96c.jpeg": "/Open-data-cw2/static/media/volunteering.45ffa96c.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.c1768c93.js",
     "static/css/2.c51d807b.chunk.css",
     "static/js/2.ce0a99b3.chunk.js",
-    "static/css/main.dd504cee.chunk.css",
-    "static/js/main.2ce131ec.chunk.js"
+    "static/css/main.9ab4957e.chunk.css",
+    "static/js/main.2e6f0635.chunk.js"
   ]
 }
