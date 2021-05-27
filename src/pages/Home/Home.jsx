@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react';
+import React,{useEffect,useState,useRef} from 'react';
 import { useHistory } from "react-router-dom";
 import { Typography,Divider,List, Input, Button,Spin, Select } from 'antd';
 import { Pie,Column } from '@ant-design/charts';
@@ -17,7 +17,9 @@ const {Title} = Typography;
 export default function Home(){
   const history = useHistory();
   const [problem, setProblem] = useState([]);
-  const [vizType, setVizType] = useState(0);
+  const [vizType, setVizType] = useState(1);
+
+  const dataVizRef = useRef(null);
   var config = {
     appendPadding: 10,
     data: problem,
@@ -55,8 +57,8 @@ const [rankList, setRankList] = useState([]);
        tmpArr.forEach(el =>{
          el.Value = parseInt(el.Value.toFixed(0));
        })
-       console.log(tmpArr)
-        setProblem(tmpArr)
+        setProblem(tmpArr);
+        dataVizRef.current.scrollIntoView();
     }).finally(res=>{
       setIsShowLoading(false)
     })
@@ -74,9 +76,11 @@ const [rankList, setRankList] = useState([]);
         </div>
         </div>
       <div className="step-section" >
+      <div style={{background:'white'}} >
       <div className='banner-text2' >We are ...</div>
       <div className='note-text' style={{color:'black',padding:'0 200px',fontSize:'20px'}} >Our aim is to help everyone live a better life. We believe that, by helping each other the world will be a better place to live. Together we can remove the problems in this world such as hunger, poverty. lack of education and many more! So join us in this mission to make the world a better place to live in! <span onClick={()=>{history.push('/Open-data-cw2/about')}} style={{color:'#1890ff'}} >read more</span>
       
+      </div>
       </div>
         <div className='banner-text2' style={{margin:'30px 0'}} >Things You Can Do ...</div>
       <img className='flow-img' alt='flow-chart' src={CharitableBanner} />
@@ -146,11 +150,11 @@ const [rankList, setRankList] = useState([]);
       </div>
      </div> */}
      <div className='data-viz-section'>
-       <div className='banner-text2' >
+       <div className='banner-text2' style={{color:'black'}} >
          Explore Problems
        </div>
-       <div className='filter-section'>
-         <Select onChange={handleVizChange} style={{width:'300px'}}>
+       <div ref={dataVizRef} className='filter-section'>
+         <Select defaultValue={1} placeholder='Explore statistic here...' onChange={handleVizChange} style={{width:'300px'}}>
            <Select.Option value={1} >Problem Around your Area (London Only)</Select.Option>
            <Select.Option value={2} >Food Bank Usage Statistic</Select.Option>
            <Select.Option value={3} >Top items needed from food banks in UK</Select.Option>

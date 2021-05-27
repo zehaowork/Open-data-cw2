@@ -441,7 +441,7 @@ export default  function Search(){
         
         
         </div>}
-        {totalItem>10&&<Pagination onChange={onPaginationChange} current={pageCount} total={totalItem}  />}
+        {totalItem>10&&tabNum==='1'&&<Pagination onChange={onPaginationChange} current={pageCount} total={totalItem}  />}
         </div>
         
     </div>)

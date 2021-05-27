@@ -10,7 +10,7 @@ import Contact from './pages/Contact/Contact';
 import Donate from './pages/Donate/Donate';
 import Search from './pages/Search/Search'
 
-import logoIcon from './images/logo-white.png'
+import logoIcon from './images/charity-white.png'
 import { Layout,Menu } from 'antd';
 import Project from "./pages/Project/Project";
 import FoodBank from "./pages/FoodBank/FoodBank";
@@ -31,8 +31,9 @@ function App() {
         <Menu.Item key="1"> <Link to="/Open-data-cw2">Home</Link></Menu.Item>
         <Menu.Item key="2"><Link to="/Open-data-cw2/about">About</Link></Menu.Item>
         <Menu.Item key="3"><Link to="/Open-data-cw2/contact">Contact</Link></Menu.Item>
-        <Menu.Item key="4"><Link to="/Open-data-cw2/donate">Donate</Link></Menu.Item>
-        <Menu.Item key="5"><Link to="/Open-data-cw2/shop">Shop</Link></Menu.Item>
+    
+        <Menu.Item key="4"><Link to="/Open-data-cw2/shop">Shop</Link></Menu.Item>
+        <Menu.Item key="5"><Link to="/Open-data-cw2/login">Login</Link></Menu.Item>
        
       </Menu>
   </Header>

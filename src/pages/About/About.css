@@ -30,3 +30,14 @@
   max-width: 80%;
   margin-bottom: 20px;
 }
+
+.ack-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.ack-img {
+  max-width: 300px;
+  max-height: 80px;
+  margin: 20px;
+}

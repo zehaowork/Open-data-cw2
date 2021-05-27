@@ -246,6 +246,6 @@ export default function Project(){
         </div>
       </div>
       </div>
-        <Button onClick={()=>{createProject();}} type="submit" size="large" primary >Submit</Button>
+        <Button onClick={()=>{createProject();}} type="primary" size="large" primary >Submit</Button>
     </div>
 }

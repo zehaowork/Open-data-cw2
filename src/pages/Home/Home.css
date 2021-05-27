@@ -140,12 +140,12 @@
 }
 .step-section {
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-center;
   justify-content: center;
-  padding: 20px;
+
   position: relative;
 }
 
@@ -156,7 +156,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f2f2f2;
+  background-color: white;
   padding-bottom: 30px;
 }
 
